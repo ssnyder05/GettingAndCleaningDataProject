@@ -32,7 +32,9 @@ run_analysis.R checks to see if any of the above files (basenames) are not prese
 ### Project Criteria    
 
 The project criteria called for creating an R script that does the following.  
+
 **1. Merge the training and the test sets to create one data set.** The original data sets had 561 features (columns). I chose to add 2 new columns to each of the training and test data sets to include the outputs (y) and subjects for each observation. Then I combined the two data sets into one large data set containing 10299 observations of 563 variables.  
+
 **2. Extract only the measurements on the mean and standard deviation for each measurement.** I decided to include only those variable names with 'mean()' or 'std()' for the original 33 variables collected in the data set. (See the Code Book for a description of the variables.) Some of the variable names include variations of 'mean' (e.g., 'meanFreq', 'gravityMean'). However, taking the phrase 'mean and standard deviation for each measurement' literally, I chose not to include these mean measurements since there was no standard deviation measurement to go with them.  
 
 **3. Use descriptive activity names to name the activities in the data set.** I used the file activity_labels.txt, included with the data set, to name the activities in my data set.
