@@ -7,7 +7,7 @@ Author: S. Snyder, 10 Sep 16
 
 
 ### Components of Tidy Data
-From the Getting and Cleaning Data, Week 3 lectures, the components of tidy data are:  
+From the Getting and Cleaning Data, Week 1 lectures, the components of tidy data are:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Raw data - dataset.zip downloaded from the data website  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Tidy data - tidyData.txt output from run_analysis.R  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Code book - included as a separate file in this project  
