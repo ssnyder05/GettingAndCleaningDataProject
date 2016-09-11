@@ -146,7 +146,6 @@ ids <- c('activity', 'subject')
 meanData <- melt(subData, id.vars=ids) %>%
             dcast(activity+subject ~ variable, mean)
 
-browser()
 # Remove the 'X_#' prefix on the variable names
 names(meanData) <- sub('[0-9]+_', '', names(meanData))
 
