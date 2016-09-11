@@ -39,15 +39,17 @@ The project criteria called for creating an R script that does the following.
 
 **3. Use descriptive activity names to name the activities in the data set.** I used the file activity_labels.txt, included with the data set, to name the activities in my data set.
 
-**4. Appropriately label the data set with descriptive variable names.** I used the file features.txt to label the variables in my data set.
+**4. Appropriately label the data set with descriptive variable names.** I used the file features.txt to label the variables in my data set. I decided to use the variable names exactly as they appeared in the given file, even the names appeared to have mistakes in them, e.g., 'fBodyBodyGyroMag-mean()'.
 
-**5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.** For this, I used the melt() and dcast() functions from the reshape2 package.  
+**5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.** For this, I used the melt() and dcast() functions from the reshape2 package to display averages for each activity / subject combination.  
 
 
 ### Running the Script  
-To run the script from the R prompt, type the following command in the working directory.  
+To run the script, download it to the working directory and type the following command at the R prompt.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;> source('run_analysis.R')  
-The script cleans up by deleting all downloaded files from the current working directory, if any, and all R objects created in the workspace.  
+
+The script cleans up by deleting all downloaded files, if any, from the current working directory and all R objects created in the workspace.  
+
 It outputs only the file tidyData.txt in the current working directory.  
 
 
