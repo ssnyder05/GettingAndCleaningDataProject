@@ -1,7 +1,8 @@
 # run_analysis.R
 #
 # This script has the code for the Getting and Cleaning Data Final Project.
-# See the README file for a description of the project.
+# See the README file for a description of the project and for files required
+#   to be in the working directory.
 #
 # The steps below are described in the README file under Project Criteria.
 #
@@ -145,8 +146,9 @@ ids <- c('activity', 'subject')
 meanData <- melt(subData, id.vars=ids) %>%
             dcast(activity+subject ~ variable, mean)
 
+browser()
 # Remove the 'X_#' prefix on the variable names
-names(meanData) <- sub('X[0-9]+_', '', names(meanData))
+names(meanData) <- sub('[0-9]+_', '', names(meanData))
 
 # Save tidy dataset
 write.table(meanData, file='tidyData.txt', row.names=FALSE)
