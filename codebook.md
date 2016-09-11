@@ -94,6 +94,8 @@ The original data set had 561 features (described under Study Design). The final
 
 For this tidyData set, I decided to include only those variable names with 'mean()' or 'std()' (paragraph 8 under Study Design) for the original 33 variables collected in the data set (Study Design, paragraph 7). Some of the variable names included variations of 'mean' (e.g., 'meanFreq', 'gravityMean'). However, taking the phrase 'mean and standard deviation for each measurement' literally, I chose not to include these mean measurements since there was no standard deviation measurement to go with them.  
 
+As required by the project guidelines, the final variables in the tidy data set are the averages of these mean() and std() variables, displayed for each activity / subject combination.  
+
 
 ###Code Book  
 The Code Book should include a description of each variable and its units.  
