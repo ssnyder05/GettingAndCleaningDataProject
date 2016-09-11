@@ -20,11 +20,11 @@ From the author's data set description (<http://archive.ics.uci.edu/ml/datasets/
 2. The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.  
 
 3. The following is provided for each record in the data set.  
-- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.  
-- Triaxial Angular velocity from the gyroscope.  
-- A 561-feature vector with time and frequency domain variables.  
-- Its activity label.  
-- An identifier of the subject who carried out the experiment.  
+    - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.  
+    - Triaxial Angular velocity from the gyroscope.  
+    - A 561-feature vector with time and frequency domain variables.  
+    - Its activity label.  
+    - An identifier of the subject who carried out the experiment.  
 
 
 From the author's feature_info.txt file provided with the data set (<https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>):  
